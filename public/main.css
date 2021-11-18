@@ -6,26 +6,37 @@
     box-sizing: border-box; 
     text-align: center; 
     font-family: Arial, Helvetica, sans-serif; 
+
    } 
-   .container{ 
-    padding: 10px; 
+   .container{  
+    background-image:url('./src/sky.jpg');
+    padding-top: 10em;
+    height: 85vh;
+    width: 100%;
    } 
+  
    h1{ 
-    padding: 12px
-   0; 
+    color: #183446;
+    margin-bottom: 1em;
+    font-size: 2em;
    } 
    .btn-style { 
-    padding: 5px; 
+    padding: 0.5em; 
     text-decoration: none; 
-    background-color: darkgray; 
-    color: white; 
+    background-color: #373F47; 
+    color: lightgray;
     border-radius: 5px; 
+    font-size: 2em;
    } 
    ul li{ 
-    list-style: none; }
+    list-style: none; 
+    font-size: 23px;
+    font-weight: 700;
+    color: #183446
+    }
    nav{ 
-    background-color: lightgray; 
-    padding: 10px 15px; 
+    background-color: #373F47; 
+    padding: 40px 40px; 
     display: flex; 
     align-content: center; 
     justify-content: space-between; 
@@ -42,3 +53,56 @@
     padding-left: 20px; 
     list-style: none; 
    }
+
+   .home,.weather{
+       text-decoration: none;
+       color: lightgray;
+       font-size: 20px;
+   }
+   h2{
+    color: lightgray;
+    font-size: 30px;
+   }
+   .home{
+       padding-right: 40px;
+   }
+   .weather{
+       padding-right: 20px;
+   }
+   h3{
+        color: white;
+        font-size: 30px;
+        text-shadow: black;
+        padding-bottom: 1em;
+        padding-top: 1em;
+   }
+
+   .weatherinput{
+    font-weight: 900;
+    color: darkgrey;
+    padding-left: -3em;
+
+   }
+   .weatherinfo{
+    font-weight: 800;
+    color: #183446;
+   }
+   .weathersubmit{
+     padding: 10px;
+     margin-top: 2em;
+     padding-left: 1em;
+     padding-right: 1em;
+     font-weight: 800;
+     color: lightgrey;
+     background-color: #183446 ;
+     border-radius: 1em;
+     font-size: 20px; 
+     cursor: pointer;
+   }
+
+   .weathersubmit:hover{
+       background-color: #046E8F;
+       color:black;
+       cursor: pointer;
+   }
+   

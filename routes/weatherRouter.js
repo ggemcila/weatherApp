@@ -18,12 +18,11 @@ router.post('/', async(req,res) => {
         return;
     }
     let name = data.name;
-    let description = data.weather[0].description;
-    let temp = data.main.temp;
-    let feels_like = data.main.feels_like;
+    let Temperature = data.main.temp;
+    let Description = data.weather[0].description;
     res.render('weather', {
         name,
-        data: { description, temp, feels_like },
+        data: { Description, Temperature},
         dataExists: true  
     });
 });
